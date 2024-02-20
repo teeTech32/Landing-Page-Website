@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <title>React App(feedbackfullstack-App)</title>
+  <script defer="" src="./React App(feedback-App)_files/bundle.js.download"></script><style>@import url(https://fonts.googleapis.com/css2? family=Poppins:wght@400;600;700&display=swap);</style><style>body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #202142;
+  color: #fff;
+  line-height: 1.6;
+}
+.container{
+  max-width: 1000px;
+  margin:auto;
+  padding: 0 20px;
+}
+
+header{
+  height: 70%;
+  width: 100%;
+  display:inline-flex;
+  justify-content:center;
+  align-items: center;
+  margin: 0px 0px 30px 0px;
+}
+
+
+.card{
+  width: auto;
+  justify-content: center;
+  background-color: #fff;
+  color:#333;
+  display: flex;
+  border-radius: 35px;
+  padding: 5px 60px 30px 60px ;
+  margin: 30px 10px; 
+}
+.rating.checked li{
+  background-color:#ff6a95;
+  color:#fff;
+}
+
+.num-display{
+  background-color:#ff6a95 ;
+  border:1px #eee solid;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 10px ;
+  font-size: 19px;
+  text-align: center;
+  position:relative;
+  top:0px;
+  right: 45px;
+  bottom:200px; 
+}
+
+.text-display{
+  font-weight: 600;
+  display:inline-block;
+  text-align: center;
+  margin: 20px;
+}
+
+.close{
+  border-style: none;
+  position: relative;
+  background-color:#fff;
+  
+}
+
+.Ave{
+ text-align: right;
+ margin: 10px;
+}
+.Rvw{
+  position:absolute;
+  margin: 0px 10px 30px 10px;
+}
+
+.form-h2{
+  display:flex;
+  justify-content:center;
+  margin: 20px;
+}
+
+ 
+
+.form-group{
+  margin: 20px 30px 20px 110px;
+  display:inline-block;
+  text-align: center;
+  display: flex;
+
+}
+.form-input{
+  padding: 5px 100px;
+  display:inline-block;
+  border-radius: 5px;
+}
+.btn{
+  justify-content:center;
+  border: 0;
+  border-radius: 8px;
+  width:70px;
+  height: 40px;
+  display:flex;
+  position: relative;
+  right: 85px;
+  padding-top: 10px;
+  margin: 5px;
+  cursor: pointer;
+  background-color:#ccc;
+  color: #eee;
+}
+.btn-secondary{
+  background-color:#202142;
+  
+}
+.btn-primary{
+  background-color: #ff6a95;
+}
+
+ul{
+  list-style: none;
+}
+.rating{
+  display:inline-flex;
+  justify-content: center;
+  justify-items:space-between;
+  margin:30px 60px 40px 20px;
+  padding: 10px 0px 30px 0px;
+  
+}
+.rating li{
+  background-color:#ccc;
+  margin: 5px; 
+  border:1px #eee solid;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 20px 20px 10px 10px ; 
+  font-size: 19px;
+  justify-content:center;
+  position:relative;
+  left: 30px;
+  right: 20px;
+  transition: 0.3s; 
+}
+.rating li:hover{
+  background-color: #ff6a95;
+  color: #fff;
+}
+.rating input{
+  opacity:0;
+}
+.rating 
+li label{
+  text-align: center;
+}
+
+
+.form{
+  justify-items: center;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.messages{
+  margin-left: 150px;
+}
+
+@media(max-width: 500px){
+  .rating{
+      display: grid;
+      grid-template-columns: 0fr  repeat(1, minmax(auto, 0em)) 0fr;
+  }
+  .form-h2{
+    display: grid;
+    grid-template-columns: 380px;
+  }
+  .messages{
+    display: grid;
+    grid-template-columns: 200px;
+
+  }
+}
+ 
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDRSxrQ0FBa0M7RUFDbEMseUJBQXlCO0VBQ3pCLFdBQVc7RUFDWCxnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxXQUFXO0VBQ1gsbUJBQW1CO0VBQ25CLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsd0JBQXdCO0FBQzFCOzs7QUFHQTtFQUNFLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsc0JBQXNCO0VBQ3RCLFVBQVU7RUFDVixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLDRCQUE0QjtFQUM1QixpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLHdCQUF3QjtFQUN4QixVQUFVO0FBQ1o7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osV0FBVztFQUNYLGNBQWM7RUFDZCxlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixPQUFPO0VBQ1AsV0FBVztFQUNYLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixvQkFBb0I7RUFDcEIsa0JBQWtCO0VBQ2xCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIscUJBQXFCOztBQUV2Qjs7QUFFQTtDQUNDLGlCQUFpQjtDQUNqQixZQUFZO0FBQ2I7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQiwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osc0JBQXNCO0VBQ3RCLFlBQVk7QUFDZDs7OztBQUlBO0VBQ0UsNEJBQTRCO0VBQzVCLG9CQUFvQjtFQUNwQixrQkFBa0I7RUFDbEIsYUFBYTs7QUFFZjtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLHNCQUFzQjtFQUN0QixTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCLFVBQVU7RUFDVixZQUFZO0VBQ1osWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsaUJBQWlCO0VBQ2pCLFdBQVc7RUFDWCxlQUFlO0VBQ2YscUJBQXFCO0VBQ3JCLFdBQVc7QUFDYjtBQUNBO0VBQ0Usd0JBQXdCOztBQUUxQjtBQUNBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLDJCQUEyQjtFQUMzQiwwQkFBMEI7RUFDMUIsMEJBQTBCOztBQUU1QjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLFdBQVc7RUFDWCxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixXQUFXO0VBQ1gsNkJBQTZCO0VBQzdCLGVBQWU7RUFDZixzQkFBc0I7RUFDdEIsaUJBQWlCO0VBQ2pCLFVBQVU7RUFDVixXQUFXO0VBQ1gsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSx5QkFBeUI7RUFDekIsV0FBVztBQUNiO0FBQ0E7RUFDRSxTQUFTO0FBQ1g7QUFDQTs7RUFFRSxrQkFBa0I7QUFDcEI7OztBQUdBO0VBQ0UscUJBQXFCO0VBQ3JCLDJCQUFzQjtFQUF0QixzQkFBc0I7QUFDeEI7QUFDQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFO01BQ0ksYUFBYTtNQUNiLDREQUE0RDtFQUNoRTtFQUNBO0lBQ0UsYUFBYTtJQUNiLDRCQUE0QjtFQUM5QjtFQUNBO0lBQ0UsYUFBYTtJQUNiLDRCQUE0Qjs7RUFFOUI7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/IGZhbWlseT1Qb3BwaW5zOndnaHRANDAwOzYwMDs3MDAmZGlzcGxheT1zd2FwJyk7XHJcblxyXG5ib2R5e1xyXG4gIGZvbnQtZmFtaWx5OiAnUG9wcGlucycsIHNhbnMtc2VyaWY7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzIwMjE0MjtcclxuICBjb2xvcjogI2ZmZjtcclxuICBsaW5lLWhlaWdodDogMS42O1xyXG59XHJcbi5jb250YWluZXJ7XHJcbiAgbWF4LXdpZHRoOiAxMDAwcHg7XHJcbiAgbWFyZ2luOmF1dG87XHJcbiAgcGFkZGluZzogMCAyMHB4O1xyXG59XHJcblxyXG5oZWFkZXJ7XHJcbiAgaGVpZ2h0OiA3MCU7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgZGlzcGxheTppbmxpbmUtZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgbWFyZ2luOiAwcHggMHB4IDMwcHggMHB4O1xyXG59XHJcblxyXG5cclxuLmNhcmR7XHJcbiAgd2lkdGg6IGF1dG87XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcclxuICBjb2xvcjojMzMzO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgYm9yZGVyLXJhZGl1czogMzVweDtcclxuICBwYWRkaW5nOiA1cHggNjBweCAzMHB4IDYwcHggO1xyXG4gIG1hcmdpbjogMzBweCAxMHB4OyBcclxufVxyXG4ucmF0aW5nLmNoZWNrZWQgbGl7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjojZmY2YTk1O1xyXG4gIGNvbG9yOiNmZmY7XHJcbn1cclxuXHJcbi5udW0tZGlzcGxheXtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiNmZjZhOTUgO1xyXG4gIGJvcmRlcjoxcHggI2VlZSBzb2xpZDtcclxuICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgaGVpZ2h0OiA0MHB4O1xyXG4gIHdpZHRoOiA0MHB4O1xyXG4gIHBhZGRpbmc6IDEwcHggO1xyXG4gIGZvbnQtc2l6ZTogMTlweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgcG9zaXRpb246cmVsYXRpdmU7XHJcbiAgdG9wOjBweDtcclxuICByaWdodDogNDVweDtcclxuICBib3R0b206MjAwcHg7IFxyXG59XHJcblxyXG4udGV4dC1kaXNwbGF5e1xyXG4gIGZvbnQtd2VpZ2h0OiA2MDA7XHJcbiAgZGlzcGxheTppbmxpbmUtYmxvY2s7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbjogMjBweDtcclxufVxyXG5cclxuLmNsb3Nle1xyXG4gIGJvcmRlci1zdHlsZTogbm9uZTtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjojZmZmO1xyXG4gIFxyXG59XHJcblxyXG4uQXZle1xyXG4gdGV4dC1hbGlnbjogcmlnaHQ7XHJcbiBtYXJnaW46IDEwcHg7XHJcbn1cclxuLlJ2d3tcclxuICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuICBtYXJnaW46IDBweCAxMHB4IDMwcHggMTBweDtcclxufVxyXG5cclxuLmZvcm0taDJ7XHJcbiAgZGlzcGxheTpmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDpjZW50ZXI7XHJcbiAgbWFyZ2luOiAyMHB4O1xyXG59XHJcblxyXG4gXHJcblxyXG4uZm9ybS1ncm91cHtcclxuICBtYXJnaW46IDIwcHggMzBweCAyMHB4IDExMHB4O1xyXG4gIGRpc3BsYXk6aW5saW5lLWJsb2NrO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG5cclxufVxyXG4uZm9ybS1pbnB1dHtcclxuICBwYWRkaW5nOiA1cHggMTAwcHg7XHJcbiAgZGlzcGxheTppbmxpbmUtYmxvY2s7XHJcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcbi5idG57XHJcbiAganVzdGlmeS1jb250ZW50OmNlbnRlcjtcclxuICBib3JkZXI6IDA7XHJcbiAgYm9yZGVyLXJhZGl1czogOHB4O1xyXG4gIHdpZHRoOjcwcHg7XHJcbiAgaGVpZ2h0OiA0MHB4O1xyXG4gIGRpc3BsYXk6ZmxleDtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgcmlnaHQ6IDg1cHg7XHJcbiAgcGFkZGluZy10b3A6IDEwcHg7XHJcbiAgbWFyZ2luOiA1cHg7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIGJhY2tncm91bmQtY29sb3I6I2NjYztcclxuICBjb2xvcjogI2VlZTtcclxufVxyXG4uYnRuLXNlY29uZGFyeXtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiMyMDIxNDI7XHJcbiAgXHJcbn1cclxuLmJ0bi1wcmltYXJ5e1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmZjZhOTU7XHJcbn1cclxuXHJcbnVse1xyXG4gIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbn1cclxuLnJhdGluZ3tcclxuICBkaXNwbGF5OmlubGluZS1mbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGp1c3RpZnktaXRlbXM6c3BhY2UtYmV0d2VlbjtcclxuICBtYXJnaW46MzBweCA2MHB4IDQwcHggMjBweDtcclxuICBwYWRkaW5nOiAxMHB4IDBweCAzMHB4IDBweDtcclxuICBcclxufVxyXG4ucmF0aW5nIGxpe1xyXG4gIGJhY2tncm91bmQtY29sb3I6I2NjYztcclxuICBtYXJnaW46IDVweDsgXHJcbiAgYm9yZGVyOjFweCAjZWVlIHNvbGlkO1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICBoZWlnaHQ6IDUwcHg7XHJcbiAgd2lkdGg6IDUwcHg7XHJcbiAgcGFkZGluZzogMjBweCAyMHB4IDEwcHggMTBweCA7IFxyXG4gIGZvbnQtc2l6ZTogMTlweDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO1xyXG4gIHBvc2l0aW9uOnJlbGF0aXZlO1xyXG4gIGxlZnQ6IDMwcHg7XHJcbiAgcmlnaHQ6IDIwcHg7XHJcbiAgdHJhbnNpdGlvbjogMC4zczsgXHJcbn1cclxuLnJhdGluZyBsaTpob3ZlcntcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmY2YTk1O1xyXG4gIGNvbG9yOiAjZmZmO1xyXG59XHJcbi5yYXRpbmcgaW5wdXR7XHJcbiAgb3BhY2l0eTowO1xyXG59XHJcbi5yYXRpbmcgXHJcbmxpIGxhYmVse1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuXHJcbi5mb3Jte1xyXG4gIGp1c3RpZnktaXRlbXM6IGNlbnRlcjtcclxuICBtYXgtd2lkdGg6IGZpdC1jb250ZW50O1xyXG59XHJcbi5tZXNzYWdlc3tcclxuICBtYXJnaW4tbGVmdDogMTUwcHg7XHJcbn1cclxuXHJcbkBtZWRpYShtYXgtd2lkdGg6IDUwMHB4KXtcclxuICAucmF0aW5ne1xyXG4gICAgICBkaXNwbGF5OiBncmlkO1xyXG4gICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDBmciAgcmVwZWF0KDEsIG1pbm1heChhdXRvLCAwZW0pKSAwZnI7XHJcbiAgfVxyXG4gIC5mb3JtLWgye1xyXG4gICAgZGlzcGxheTogZ3JpZDtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMzgwcHg7XHJcbiAgfVxyXG4gIC5tZXNzYWdlc3tcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDIwMHB4O1xyXG5cclxuICB9XHJcbn1cclxuIFxyXG5cclxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><header style="background-color: rgba(0, 0, 0, 0.4); color: rgb(255, 106, 149);"><div class="container"><h2>Feedback UI</h2></div></header><div class="container"><div class="card" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><form class="form"><h2 class="form-h2">How would you rate your service with us?</h2><ul class="rating false"><li><input type="radio" name="rating" id="num1" value="1"><label for="num1">1</label></li><li><input type="radio" name="rating" id="num2" value="2"><label for="num2">2</label></li><li><input type="radio" name="rating" id="num3" value="3"><label for="num3">3</label></li><li><input type="radio" name="rating" id="num4" value="4"><label for="num4">4</label></li><li><input type="radio" name="rating" id="num5" value="5"><label for="num5">5</label></li><li><input type="radio" name="rating" id="num6" value="6"><label for="num6">6</label></li><li><input type="radio" name="rating" id="num7" value="7" checked=""><label for="num7">7</label></li><li><input type="radio" name="rating" id="num8" value="8"><label for="num8">8</label></li><li><input type="radio" name="rating" id="num9" value="9"><label for="num9">9</label></li><li><input type="radio" name="rating" id="num10" value="10"><label for="num10">10</label></li></ul><div class="form-group"><input type="text" class="form-input" placeholder="Write a review" value=""><button type="submit" disabled="" class="btn btn-secondary" style="background-color: rgb(255, 106, 149); color: rgb(0, 0, 0);">Send</button></div></form></div><div class="feedback-stats"><h4 class="Rvw">3:Reviews</h4><h4 class="Ave">Average rating : 9</h4></div><div class="feedback-list"><div style="opacity: 1;"><div class="card" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><div class="num-display">8</div><div class="text-display"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repudiandae me.</div><button class="close"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" color="purple" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: purple;"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button></div></div><div style="opacity: 1;"><div class="card" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><div class="num-display">9</div><div class="text-display"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repudiandae okay .</div><button class="close"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" color="purple" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: purple;"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button></div></div><div style="opacity: 1;"><div class="card" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><div class="num-display">10</div><div class="text-display"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repudiandae.</div><button class="close"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" color="purple" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: purple;"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button></div></div></div></div></div>
+    
+   
+  
+
+</body></html>
